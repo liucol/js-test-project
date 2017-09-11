@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+.clearfix:after{
+	content: "";
+	display: inline-block;
+	clear: both;
+}
+.wrap{
+	margin: 20px auto;
+	width: 400px;
+	border:  1px solid black;
+}
+.header li{
+	float: left;
+	padding: 10px 44.63px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	cursor: pointer;
+}
+.header li:last-child{
+   border-right: none;
+}
+.header .active{
+	background: #ccc;
+	color: red;
+}
+.panner li{
+    padding: 100px;
+    display: none;
+}
+.panner .active{
+	display: block;
+}

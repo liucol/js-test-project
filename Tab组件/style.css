@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: " ";
+    display: inline-block;
+    clear: both;
+}
+
+body {
+    text-align: center;
+}
+
+.wrap1,.wrap2 {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.head li {
+    float: left;
+    border-bottom: 1px solid black;
+}
+
+.head li {
+    padding: 10px 60px;
+    cursor: pointer;
+}
+
+.head li:nth-child(2) {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.head .active {
+    background: #ccc;
+    color: red;
+}
+
+.container li {
+    display: none;
+    text-align: left;
+    padding: 10px 0 200px 10px;
+}
+
+.container .active {
+    display: block;
+}

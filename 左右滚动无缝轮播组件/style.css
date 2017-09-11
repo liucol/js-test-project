@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: " ";
+    display: inline-block;
+    clear: both;
+}
+
+.wrap {
+	margin: 0 auto;
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+}
+
+.wrap a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.wrap .image-container {
+	position: relative;
+    display: inline-block;
+}
+
+.wrap .image-container li {
+    float: left;
+}
+
+.wrap .image-container a {}
+
+.wrap .image-container img {
+    width: 400px;
+    vertical-align: top;
+}
+.wrap .cursor {
+	color: white;
+	font-size: 20px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid white;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+    top: 50%;
+}
+.wrap .cursor:hover{
+	background-color: black;
+	opacity: .6;
+}
+.wrap .prev {
+    position: absolute;
+    left: 10px;
+}
+
+.wrap .next {
+    position: absolute;
+    right: 10px;
+}
+
+.wrap .bubble {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	bottom: 10px;
+	font-size: 0;
+}
+
+.wrap .bubble li {
+	display: inline-block;
+	margin: 0 4px;
+	cursor: pointer;
+	width: 34px;
+	height: 8px;
+	border-radius: 5px;
+	background-color: white;
+}
+.wrap .bubble .active{
+	background-color: black;
+	opacity: .6;
+}

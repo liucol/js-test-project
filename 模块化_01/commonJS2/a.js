@@ -1,0 +1,11 @@
+//***commonjs***
+//方法一：
+exports.xxx1={
+	name:"moduleA1"
+}
+//方法二：
+module.exports={
+    xxx2:{
+    	name:"moduleA2"
+    }
+}

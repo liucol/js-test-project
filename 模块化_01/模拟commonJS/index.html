@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript" src="index.js"></script>
+	<script>
+		define('qq',function(){
+			return {name:'qq'}
+		})
+	</script>
+	<script>
+		define('baidu',function(qqmodule){
+			return {name:'baidu'}
+		})
+	</script>
+	<script>
+		define('qq-qun',['qq'],function(qqmodule){
+			var qun={
+				name:'qq-qun'
+			}
+			debugger
+			//把qun模块挂载到qq模块上
+			qqmodule.qun=qun
+
+			return qun
+		})
+	</script>
+	<script>
+		require(['qq','baidu','qq-qun'],function(qqmodule,baidumodule,qunmodule){
+            console.log(qqmodule)
+            console.log(baidumodule)
+            console.log(qunmodule)
+		})
+	</script>
+</body>
+</html>

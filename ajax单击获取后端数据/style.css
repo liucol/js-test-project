@@ -1,0 +1,27 @@
+*{margin: 0;padding: 0;}
+ul,li{
+	list-style: none;
+}
+body{
+	text-align: center;
+}
+.button{
+	padding: 10px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+.button:hover{
+	background: red;
+}
+ul>li{
+	border: 1px solid black;
+	padding: 5px 0;
+	margin: 5px 0;
+	text-align: center;
+}
+ul>li:hover{
+	background: #ccc;
+}

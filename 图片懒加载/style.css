@@ -1,0 +1,17 @@
+*{padding: 0;margin: 0;}
+.clearfix:after{
+	content: "";
+	display: inline-block;
+	clear: both;
+}
+.images{
+	margin: 0 auto;
+    max-width: 1120px;
+}
+.images .image-wrap{
+   display: inline-block;
+   width: 350px;
+   height: 200px;
+   margin: 10px;
+   background: red;
+}

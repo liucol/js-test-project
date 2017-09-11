@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title></title>
+        </head>
+        <body>
+            <div>
+                <button id="btn">点我</button>
+            </div>
+            <script>
+                var Obtn=document.querySelector("#btn")
+                
+                Obtn.addEventListener("click",function(){
+                    var xhr=new XMLHttpRequest()
+                    
+                    xhr.onreadystatechange=function(){
+                        if(xhr.readyState===4&&(xhr.status===200||xhr.status===304)){
+                            var firends=JSON.parse(xhr.responseText)
+                            console.log(firends)
+                        }
+                    }
+
+                    xhr.open("get","/loadMore",true)
+                    xhr.send()
+                })
+            </script>
+        </body>
+    </html> 
