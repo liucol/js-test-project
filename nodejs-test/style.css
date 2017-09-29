@@ -1,0 +1,29 @@
+.dialog{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1px 1000px rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+.dialog .title{
+    text-align: center;
+    line-height: 30px;
+}
+.dialog .inputtext{
+    margin: 20px 0;
+}
+.dialog .content{
+    padding: 10px 0;
+}
+.dialog .btn{
+    text-align: center;
+}
+.dialog .btn span{
+    padding: 0 15px;
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+}
