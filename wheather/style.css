@@ -136,15 +136,15 @@ body{
 }
 .afterWheather img{
     width: 40px;
-    margin: 9px 0;
+    margin: 8px 0;
 }
 .afterWheather li{
     float: left;
-    padding: 30px 0;
+    padding: 18px 0;
     border-left: 1px solid #8C8D8F;
 }
 .afterWheather li div{
-    padding: 0 24px;
+    padding: 0 16px;
 }
 .afterWheather .week span{
     display: inline-block;
